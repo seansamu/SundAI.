@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RU Hacks 2019</title>
+
+		<link rel="stylesheet" type="text/css" href="ru_hacks.css">
+		<link href="https://fonts.googleapis.com/css?family=Abel|Acme|Bree+Serif|Fjalla+One|Baloo+Bhai|Lora|Montserrat|Oswald|PT+Sans+Caption|Ubuntu|Ranga|Marck+Script|Heebo" rel="stylesheet">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+		<script>
+			var userName='';
+
+			window.onload = function() {
+				document.getElementById('frame').style.visibility = 'hidden';
+			}
+
+			function scrollHome() {
+				window.scrollTo(0,0);
+			}
+			function scrollProj() {
+				window.scrollTo(0,690);
+			}
+			function scrollAbout() {
+				window.scrollTo(0,1385);
+			}
+
+			function makeUser() {
+				userName = 'Trial';
+				checkIFrame();
+			}
+
+			function checkIFrame() {
+				if (userName != '') {
+					document.getElementById("frame").style.visibility = "visible";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<nav>
+			<li onclick="scrollAbout()">Team and Purpose</li>
+			<li onclick="scrollProj()">Our Project</li>
+			<li onclick="scrollHome()">Home</li>
+		</nav>
+		<div class="main">
+			<h2>Welcome</h2>
+			<h2>to</h2>
+			<h2>SundAI.</h2>
+			<button onclick="makeUser()">Log In</button>
+			<!--<form class="popUP">
+				<h1>Username:</h1><br>
+				<input type="text" name="username"><br>
+				<h1>Password:</h1><br>
+				<input type="text" name="password">
+				<button id="log_button">Confirm</button>
+			</form>-->
+		</div>
+		<div class="project">
+			<h2>Our Project</h2>
+			<iframe id='frame' src='https://webchat.botframework.com/embed/RealBot2?s=sx3HbSldq64.2oLZOSwHAcOPxogOTU72fq8Iyd4GXMGesGuyKiRLreU'></iframe>
+			<img src="spaceman.png">
+			<div class="sun_text">
+				<h3>Hello!</h3>
+				<h4>My Name Is</h4>
+				<h5>[</h5><h1>SundAI.</h1><h5>]</h5>
+			</div>
+		</div>
+		<div class="about_us">
+			<h2>Team and Purpose</h2>
+
+			<h3>Team Name:</h3>
+			<h1>404 Team Not Found</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed lorem sit amet arcu scelerisque consequat at ac nibh. Maecenas fermentum lorem sit amet turpis condimentum ultrices. In quis suscipit elit. Vivamus nec odio et eros lacinia semper sed eget turpis. Sed imperdiet, urna vel lacinia scelerisque, odio nisl feugiat risus, ac elementum felis ipsum vitae leo. Donec vitae bibendum neque. Nunc elementum ornare turpis, sit amet lobortis massa pellentesque sit amet. Sed vulputate consectetur est, a mollis odio hendrerit non. Integer tincidunt interdum vulputate.</p>
+
+			<img src="logo.png">
+		</div>
+	</body>
+</html>

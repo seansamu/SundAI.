@@ -1,0 +1,357 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Page Basics */
+html {
+	scroll-behavior: smooth;
+	background-color: black;
+}
+
+/* Navigation */
+nav {
+	background-color: #0D6A99/*#3DC1C5*/;
+	position: fixed;
+	width: 96%;
+	height: 0%;
+	padding: 2.5% 2%;
+	z-index: 2;
+}
+
+nav li {
+	background-color: #0D6A99;
+	list-style: none;
+	float: right;
+	display: inline-block;
+	position: relative;
+	top: -38px;
+	right: 0%;
+	padding: 30px 55px;
+	margin: 0px 5px;
+	text-transform: uppercase;
+	font-family: 'Oswald';
+	letter-spacing: 1px;
+	color: white;
+	transition: .15s ease-in-out;
+}
+
+nav li:hover {
+	color: white;
+	background-color: #0D4D6E;
+	transition: .15s ease-in-out;
+}
+
+/* Main */
+.main {
+	width: 100%;
+	height: 80%;
+	/*background-image: radial-gradient(circle, #E4ADDC 50%, #C18DB9);*/
+	background-color: #0B93D9;
+	padding: 190px 0%;
+}
+
+.main h2 {
+	position: relative;
+	top: -20px;
+	margin-bottom: 40px;
+	font-size: 64px;
+	font-family: 'Roboto Light';
+	color: white;
+	letter-spacing: 2px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.main p {
+	position: relative;
+	top: -45px;
+	color: white;
+	margin-top: 20px;
+	font-size: 30px;
+	font-family: 'Heebo';
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.main button {
+	border: none;
+	position: relative;
+	top: 80px;
+	left: 44.5%;
+	font-family: 'Roboto Light';
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: white;
+	padding: 25px 60px;
+	background-color: #0D6A99;
+	text-transform: uppercase;
+	transition: .15s ease-in-out;	
+}
+
+.main button:hover {
+	background-color: #0D4D6E;
+	transition: .15s ease-in-out;
+}
+
+/* About Us */
+.about_us {
+	background-color: #1A4465;
+	position: absolute;
+	width: 100%;
+	height: 90%;
+}
+
+.about_us h2 {
+	position: relative;
+	top: 3%;
+	font-size: 64px;
+	font-family: 'Roboto Light';
+	color: white;
+	letter-spacing: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 1px solid white;
+	padding-bottom: 10px;
+}
+
+.about_us h1 {
+	font-family: 'Montserrat';
+	font-size: 48px;
+	color: white;
+	position: relative;
+	display: inline-block;
+	left: -2%;
+	top: 115px;
+	text-shadow: 10px 12px 15px #000;
+	text-transform: uppercase;
+}
+
+.about_us h3 {
+	font-size: 40px;
+	font-family: 'Montserrat';
+	color: white;
+	position: relative;
+	display: inline-block;
+	left: 10%;
+	top: 60px;
+	text-transform: uppercase;
+}
+
+.about_us p {
+	position: relative;
+	top: 25%;
+	left: 10%;
+	width: 80%;
+	font-size: 24px;
+	font-family: 'Roboto';
+	color: white;
+	text-align: justify;
+}
+
+.about_us img {
+	width: 75px;
+	height: 75px;
+	position: relative;
+	top: -95px;
+	left: 150px;
+}
+
+/* Our Project */
+.project {
+	background-color: #00BDCA;
+	padding: 28px 0%;
+	max-height: 628px;
+}
+
+.project h2 {
+	margin-bottom: 50px;
+	font-size: 64px;
+	font-family: 'Oswald';
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: center;
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+}
+
+.project iframe {
+	background-color: white;
+	position: relative;
+	left: 20px;
+	display: inline-block;
+	box-shadow: 10px 15px 40px -5px #212121;
+	min-width: 400px; 
+	width: 60%; 
+	min-height: 500px; 
+	height: 500px;
+}
+
+.project img {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	top: -540px;
+	margin-left: 20px;
+}
+
+/* Our Project ==> Sun_Text */
+.sun_text {
+	display: inline-block;
+	position: relative;
+	top: -375px;
+	left: 65%;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.sun_text h3 {
+	font-size: 64px;
+	font-family: 'Ubuntu';
+	margin-bottom: 20px;
+	text-align: center;
+}
+.sun_text h4 {
+	font-size: 44px;
+	font-family: 'Ubuntu';
+	margin-bottom: 20px;
+	text-align: center;
+}
+.sun_text h1 {
+	font-size: 104px;
+	font-family: 'Ubuntu';
+	text-align: center;
+	display: inline-block;
+	margin: 0px 15px;
+}
+.sun_text h5 {
+	position: relative;
+	top: 5px;
+	font-size: 120px;
+	font-family: 'Roboto Light';
+	display: inline-block;
+	color: white;
+}
+
+/* Animation */
+@keyframes fade {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+div {
+	animation-name: fade;
+	animation-duration: 1.25s;
+}
+
+@keyframes shadow_pulse {
+	0% {
+		box-shadow: 0px 0px 20px -30px #fff;	
+	}
+
+	50% {
+		box-shadow: 0px 0px 20px 0px #DCDCDC;
+	}
+
+	100% {
+		box-shadow: 0px 0px 20px -30px #fff;
+	}
+}
+
+button {
+	animation: shadow_pulse 4.25s 1;
+	animation-delay: 3.25s;
+}
+
+
+/*
+.popUP {
+	position: relative;
+	top: -400px;
+	left: 20%; 
+	width: 900px;
+	height: 450px;
+	background-color: lightgrey;
+	z-index: 5;
+}
+
+.popUP h1 {
+	position: relative;
+	left: 100px;
+	font-size: 36px;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Oswald';
+}
+
+.popUP h1:first-child {
+	margin-top: 50px;
+}
+
+.popUP input {
+	position: relative;
+	left: 70px;
+	margin: 30px;
+	width: 680px;
+	height: 50px;
+}
+
+#log_button {
+	position: relative;
+	left: 320px;
+	font-family: 'Roboto Light';
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: white;
+	padding: 25px 60px;
+	background-color: #0D6A99;
+	text-transform: uppercase;
+	transition: .15s ease-in-out;
+}*/
